@@ -45,7 +45,7 @@ export default function ThankYouPage() {
 				</div>
 			</motion.div>
 
-			<div className="mt-20 flex flex-col items-center justify-center bg-white shadow-lg px-4">
+			<div className="mt-20 flex flex-col items-center justify-center bg-white px-4 bordre border-black rounded-md">
 
 				{/* Message de confirmation */}
 				<motion.div
