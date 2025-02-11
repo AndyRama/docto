@@ -13,7 +13,7 @@ export default function ThankYouPage() {
 	}
 
 	const handleViewAppointments = () => {
-		router.push("/") // Redirection vers les rendez-vous
+		router.push("/dashboard/account") // Redirection vers les rendez-vous
 	}
 
 	return (

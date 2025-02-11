@@ -23,7 +23,7 @@ export default function AppointmentBooking() {
 	// ✅ Fonction de gestion de la sélection
 	const handleSelection = (value: string) => {
 		console.log("Motif sélectionné :", value)
-		router.push("/appointments/checkout") // 🚀 Redirection après sélection
+		router.push("/Booking/form") // 🚀 Redirection après sélection
 	}
 
 	return (
@@ -67,15 +67,7 @@ export default function AppointmentBooking() {
 								<RadioGroup defaultValue="" className="space-y-2" onValueChange={handleSelection}>
 									<div className="flex items-center space-x-2">
 										<RadioGroupItem value="consultation-mg" id="consultation-mg" />
-										<Label htmlFor="consultation-mg">Patients habituels - Consultation MG</Label>
-									</div>
-									<div className="flex items-center space-x-2">
-										<RadioGroupItem value="nouveau-patient" id="nouveau-patient" />
-										<Label htmlFor="nouveau-patient">Nouveau patient - Première consultation</Label>
-									</div>
-									<div className="flex items-center space-x-2">
-										<RadioGroupItem value="urgence" id="urgence" />
-										<Label htmlFor="urgence">Consultation urgente</Label>
+										<Label htmlFor="consultation-mg">Stripe Paiement</Label>
 									</div>
 								</RadioGroup>
 							</div>

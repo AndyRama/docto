@@ -12,7 +12,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
-export default function AppointmentBooking() {
+export default function BookingEvent() {
 	const router = useRouter()
 
 	const fadeIn = {
@@ -23,7 +23,7 @@ export default function AppointmentBooking() {
 	// ✅ Fonction de gestion de la sélection
 	const handleSelection = (value: string) => {
 		console.log("Motif sélectionné :", value)
-		router.push("/appointments/checkout") // 🚀 Redirection après sélection
+		router.push("/Booking/stripe") // 🚀 Redirection après sélection
 	}
 
 	return (
@@ -61,21 +61,17 @@ export default function AppointmentBooking() {
 							</Button>
 
 							<div>
-								<h2 className="text-lg font-medium mb-4">Vous etes ?</h2>
+								<h2 className="text-lg font-medium mb-4">Choisissez votre motif de consultation</h2>
 								
 								{/* ✅ Gestion de la sélection avec onValueChange */}
 								<RadioGroup defaultValue="" className="space-y-2" onValueChange={handleSelection}>
 									<div className="flex items-center space-x-2">
 										<RadioGroupItem value="consultation-mg" id="consultation-mg" />
-										<Label htmlFor="consultation-mg">Patients habituels - Consultation MG</Label>
+										<Label htmlFor="consultation-mg">Consultation</Label>
 									</div>
 									<div className="flex items-center space-x-2">
 										<RadioGroupItem value="nouveau-patient" id="nouveau-patient" />
-										<Label htmlFor="nouveau-patient">Nouveau patient - Première consultation</Label>
-									</div>
-									<div className="flex items-center space-x-2">
-										<RadioGroupItem value="urgence" id="urgence" />
-										<Label htmlFor="urgence">Consultation urgente</Label>
+										<Label htmlFor="nouveau-patient">consultation en ligne</Label>
 									</div>
 								</RadioGroup>
 							</div>

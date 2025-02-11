@@ -23,7 +23,7 @@ export default function AppointmentBooking() {
 	// ✅ Fonction de gestion de la sélection
 	const handleSelection = (value: string) => {
 		console.log("Motif sélectionné :", value)
-		router.push("/appointments/checkout") // 🚀 Redirection après sélection
+		router.push("/Booking/consultation") // 🚀 Redirection après sélection
 	}
 
 	return (
