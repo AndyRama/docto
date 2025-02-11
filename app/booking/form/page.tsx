@@ -106,7 +106,7 @@ export default function AppointmentBooking() {
     setSelectedTime(time)
     // Add a small delay before navigation to show the selection state
     setTimeout(() => {
-      router.push("/Booking/checkout")
+      router.push("/booking/checkout")
     }, 300)
   }
 

@@ -23,7 +23,7 @@ export default function BookingEvent() {
 	// ✅ Fonction de gestion de la sélection
 	const handleSelection = (value: string) => {
 		console.log("Motif sélectionné :", value)
-		router.push("/Booking/stripe") // 🚀 Redirection après sélection
+		router.push("/booking/stripe") // 🚀 Redirection après sélection
 	}
 
 	return (
