@@ -42,13 +42,6 @@ export default function ThankYouPage() {
             height={96}
             className="w-full h-full object-cover"
           />
-          <Image
-            src="/placeholder.jpg"
-            alt="Profile"
-            width={96}
-            height={96}
-            className="w-full h-full object-cover"
-          />
         </div>
         <div className="text-center mt-4">
           <h1 className="text-2xl font-bold">Dr Ramaroson Lucienne</h1>
