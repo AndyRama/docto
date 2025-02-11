@@ -1,7 +1,7 @@
 import { Smartphone, Stethoscope, User } from "lucide-react"
 import Link from "next/link"
-import { Button } from "./ui/button"
-import CalendlyLogin from "@/components/CalendlyLogin"
+// import { Button } from "./ui/button"
+// import CalendlyLogin from "@/components/CalendlyLogin"
 
 export default function Navigation() {
 
@@ -24,7 +24,7 @@ export default function Navigation() {
 						<div className="flex space-x-4">
 
 							<Link 
-								href="/appointments" 
+								href="/booking" 
 								className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 bg-gray-50"
 							>
 								Mes rendez-vous
