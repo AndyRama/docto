@@ -44,8 +44,8 @@ export default function ThankYouPage() {
 					</div>
 				</div>
 			</motion.div>
-			
-			<div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
+
+			<div className="mt-20 flex flex-col items-center justify-center bg-gray-100 px-4">
 
 				{/* Message de confirmation */}
 				<motion.div
