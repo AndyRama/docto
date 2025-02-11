@@ -45,11 +45,11 @@ export default function ThankYouPage() {
 				</div>
 			</motion.div>
 
-			<div className="mt-20 flex flex-col items-center justify-center bg-gray-100 px-4">
+			<div className="mt-20 flex flex-col items-center justify-center bg-white shadow-lg px-4">
 
 				{/* Message de confirmation */}
 				<motion.div
-					className="bg-white shadow-lg rounded-2xl p-8 max-w-md text-center mt-8"
+					className="rounded-2xl p-8 max-w-md text-center mt-8"
 					initial={{ opacity: 0, y: -20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
