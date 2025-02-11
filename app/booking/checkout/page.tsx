@@ -24,7 +24,7 @@ export default function ThankYouPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
+	<>
       <Navigation />
       {/* Profile Section */}
       <motion.div
@@ -55,6 +55,7 @@ export default function ThankYouPage() {
           <p className="text-gray-200">Médecin généraliste</p>
         </div>
       </motion.div>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
 
       {/* Message de confirmation */}
       <motion.div
@@ -80,5 +81,6 @@ export default function ThankYouPage() {
         </div>
       </motion.div>
     </div>
+  </>
   );
 }
