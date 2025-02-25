@@ -36,7 +36,7 @@ export default function ThankYouPage() {
 			>
 				<div className="container mx-auto px-4 flex items-center gap-6">
 					<div className="rounded-lg overflow-hidden w-24 h-24 bg-white">
-						<Image src="./placeholder.jpg" alt="Profile" width={96} height={96} className="w-full h-full object-cover" />
+						<Image src="./../placeholder.jpg" alt="Profile" width={96} height={96} className="w-full h-full object-cover" />
 					</div>
 					<div>
 						<h1 className="text-2xl font-bold">Dr Ramaroson Lucienne</h1>
@@ -45,7 +45,7 @@ export default function ThankYouPage() {
 				</div>
 			</motion.div>
 
-			<div className="mt-20 flex flex-col items-center justify-center bg-white px-4 bordre border-black rounded-md">
+			<div className="mt-20 flex flex-col items-center justify-center bg-white px-4 border border-black rounded-md w-[400px] mx-auto">
 
 				{/* Message de confirmation */}
 				<motion.div

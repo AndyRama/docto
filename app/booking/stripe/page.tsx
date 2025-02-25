@@ -39,7 +39,7 @@ export default function AppointmentBooking() {
 			>
 				<div className="container mx-auto px-4 flex items-center gap-6">
 					<div className="rounded-lg overflow-hidden w-24 h-24 bg-white">
-						<Image src="./placeholder.jpg" alt="Profile" width={96} height={96} className="w-full h-full object-cover" />
+						<Image src="./../placeholder.jpg" alt="Profile" width={96} height={96} className="w-full h-full object-cover" />
 					</div>
 					<div>
 						<h1 className="text-2xl font-bold">Dr Ramaroson Lucienne</h1>

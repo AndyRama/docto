@@ -506,7 +506,7 @@ export default function LandingPage() {
                       </Button>
                     </Link> */}
 
-                    <Link href="/booking">
+                    <Link href="https://cal.com/dr-sarah-johnson">
                       <Button className="w-full mb-4" size="lg">
                       <span className='my-[-10px] mx-1'>
                       <Calendar/>
