@@ -22,7 +22,7 @@ export default function AppointmentBooking() {
 					dark: { "cal-brand": "#fafafa" }
 				},
 				hideEventTypeDetails: false,
-				layout: "col_view"
+				layout: "month_view"
 			});
 		})();
 	}, []);
@@ -55,7 +55,7 @@ export default function AppointmentBooking() {
 				</div>
 			</motion.div>
 
-			<div className="container mx-auto p-4 max-w-9sxl">
+			<div className="container mx-auto p-4 max-w-9xl">
 				<div className="mb-8">
 					<h1 className="text-xl font-semibold mb-4">Prenez votre rendez-vous en ligne</h1>
 					<p className="text-muted-foreground mb-4">Selectionner un creneau horaire.</p>
@@ -74,7 +74,7 @@ export default function AppointmentBooking() {
 					namespace="20min-merignac"
 					calLink="dr-sarah-johnson/20min-merignac"
 					style={{ width: "100%", height: "100%", overflow: "auto" }}
-					config={{ layout: "col_view" }}
+					config={{ layout: "month_view" }}
 				/>
 				</div>
 			</div>
