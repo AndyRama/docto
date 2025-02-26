@@ -22,7 +22,7 @@ export default function AppointmentBooking() {
 					dark: { "cal-brand": "#fafafa" }
 				},
 				hideEventTypeDetails: false,
-				layout: "week_view"
+				layout: "month_view"
 			});
 		})();
 	}, []);
@@ -74,7 +74,7 @@ export default function AppointmentBooking() {
 					namespace="20min-merignac"
 					calLink="dr-sarah-johnson/20min-merignac"
 					style={{ width: "100%", height: "100%", overflow: "auto" }}
-					config={{ layout: "week_view" }}
+					config={{ layout: "month_view" }}
 				/>
 				</div>
 			</div>
