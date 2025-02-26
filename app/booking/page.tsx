@@ -72,16 +72,16 @@ export default function AppointmentBooking() {
 								Étape précédente
 							</Button>
 
-							<Cal
-								namespace="20min-merignac"
-								calLink="dr-sarah-johnson/20min-merignac"
-								style={{ width: "100%", height: "100%", overflow: "auto" }}
-								config={{ layout: "month_view" }}
-							/>
 						</div>
 					</div>
 				</div>
 			</div>
+			<Cal
+				namespace="20min-merignac"
+				calLink="dr-sarah-johnson/20min-merignac"
+				style={{ width: "100%", height: "100%", overflow: "auto" }}
+				config={{ layout: "month_view" }}
+			/>
 		</>
 	);
 }
