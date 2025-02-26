@@ -1,11 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-// import Navigation from "@/components/Navigation";
-// import { motion } from "framer-motion";
+import Navigation from "@/components/Navigation";
 import { ChevronLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -34,11 +32,11 @@ export default function AppointmentBooking() {
 
 	return (
 		<>
-			{/* <Navigation /> */}
-			<div className="container mx-auto px-4 flex items-center gap-6">
+			<Navigation />
+			<div className="mx-auto px-4 flex items-center gap-6">
 				<div className="grid lg:grid-cols-[1fr,400px] gap-8">
 					<div className="space-y-6">
-						<Link href="https://docto-mu.vercel.app">
+						<Link href="https://docto-mu.vercel.app" target="_blank">
 							<Button variant="ghost" className="flex items-center gap-2">
 								<ChevronLeft className="w-4 h-4" />
 								Retour
