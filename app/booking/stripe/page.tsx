@@ -23,7 +23,7 @@ export default function AppointmentBooking() {
 	// ✅ Fonction de gestion de la sélection
 	const handleSelection = (value: string) => {
 		console.log("Motif sélectionné :", value)
-		router.push("/booking/form") // 🚀 Redirection après sélection
+		router.push("https://cal.com/dr-sarah-johnson/20min-merignac") // 🚀 Redirection après sélection
 	}
 
 	return (
