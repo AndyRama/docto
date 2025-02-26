@@ -22,7 +22,7 @@ export default function AppointmentBooking() {
 					dark: { "cal-brand": "#fafafa" }
 				},
 				hideEventTypeDetails: false,
-				layout: "month_view"
+				layout: "col_view"
 			});
 		})();
 	}, []);
