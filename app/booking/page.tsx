@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
@@ -31,12 +32,6 @@ export default function AppointmentBooking() {
 		visible: { opacity: 1, y: 0 }
 	};
 
-	// ✅ Fonction de gestion de la sélection
-	const handleSelection = (value: string) => {
-		console.log("Motif sélectionné :", value);
-		router.push("/booking/consultation"); // 🚀 Redirection après sélection
-	};
-
 	return (
 		<>
 			<Navigation />
@@ -63,25 +58,26 @@ export default function AppointmentBooking() {
 			<div className="container mx-auto p-4 max-w-6xl">
 				<div className="mb-8">
 					<h1 className="text-xl font-semibold mb-4">Prenez votre rendez-vous en ligne</h1>
-					<p className="text-muted-foreground mb-8">Renseignez les informations suivantes</p>
+					<p className="text-muted-foreground mb-4">Selectionner un creneau horaire.</p>
 
 					<div className="grid lg:grid-cols-[1fr,400px] gap-8">
 						<div className="space-y-6">
-							<Button variant="ghost" className="flex items-center gap-2">
-								<ChevronLeft className="w-4 h-4" />
-								Étape précédente
-							</Button>
-
+							<Link href="https://docto-mu.vercel.app">
+								<Button variant="ghost" className="flex items-center gap-2">
+									<ChevronLeft className="w-4 h-4" />
+									Retour
+								</Button>
+							</Link>
 						</div>
 					</div>
 				</div>
+				<Cal
+					namespace="20min-merignac"
+					calLink="dr-sarah-johnson/20min-merignac"
+					style={{ width: "100%", height: "100%", overflow: "auto" }}
+					config={{ layout: "month_view" }}
+				/>
 			</div>
-			<Cal
-				namespace="20min-merignac"
-				calLink="dr-sarah-johnson/20min-merignac"
-				style={{ width: "100%", height: "100%", overflow: "auto" }}
-				config={{ layout: "month_view" }}
-			/>
 		</>
 	);
 }
