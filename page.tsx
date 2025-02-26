@@ -23,8 +23,8 @@ import { motion } from "framer-motion";
 import Navigation from "./components/Navigation"
 import { Footer } from "./components/Footer"
 import FooterBottom from "./components/FooterBottom"
-import IconGoogle from "./public/googleCalendar.png"
-import IconCalendly from "./public/calendly.png"
+// import IconGoogle from "./public/googleCalendar.png"
+// import IconCalendly from "./public/calendly.png"
 
 export default function LandingPage() {
 
