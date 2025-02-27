@@ -4,7 +4,7 @@ import Link from "next/link";
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
-import { ChevronLeft } from "lucide-react";
+import { Home, CalendarClock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -35,11 +35,17 @@ export default function AppointmentBooking() {
 			<Navigation />
 			<div className="mx-auto px-4 flex items-center gap-6">
 				<div className="grid lg:grid-cols-[1fr,400px] gap-8">
-					<div className="space-y-6">
+					<div className="space-y-6 flex">
 						<Link href="https://docto-mu.vercel.app">
-							<Button variant="ghost" className="flex items-center gap-2">
-								<ChevronLeft className="w-4 h-4" />
-								Retour
+							<Button variant="ghost" className="flex-row items-center gap-2">
+								<Home className="w-4 h-4" />
+							  	Home
+							</Button>
+						</Link>
+						<Link href="https://docto-mu.vercel.app/account/booking">
+							<Button variant="ghost" className="flex-row items-center gap-2">
+								<CalendarClock className="w-4 h-4" />
+							  	Mes rendez-vous
 							</Button>
 						</Link>
 					</div>
