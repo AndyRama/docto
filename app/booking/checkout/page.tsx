@@ -7,8 +7,8 @@ import { Separator } from "@/components/ui/separator"
 
 import Navigation from "@/components/Navigation";
 import { motion } from "framer-motion";
-import { CheckCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+// import { CheckCircle } from "lucide-react";
+// import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
