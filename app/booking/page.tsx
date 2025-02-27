@@ -36,7 +36,7 @@ export default function AppointmentBooking() {
 			<div className="mx-auto px-4 flex items-center gap-6">
 				<div className="grid lg:grid-cols-[1fr,400px] gap-8">
 					<div className="space-y-6">
-						<Link href="https://docto-mu.vercel.app" target="_blank">
+						<Link href="https://docto-mu.vercel.app">
 							<Button variant="ghost" className="flex items-center gap-2">
 								<ChevronLeft className="w-4 h-4" />
 								Retour
